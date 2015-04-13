@@ -2,5 +2,6 @@
 arquivo = open('usuario.csv','r')
 leitura = arquivo.readlines()
 for linha in leitura:
-    palavra=linha.strip().split(',')
-    print(palavra)
+    linhas=linha.strip().split(',')
+    for j in linhas:
+        palavras=j.strip().split(',')
