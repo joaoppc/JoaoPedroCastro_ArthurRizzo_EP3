@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 arquivo = open('usuario.csv','r')
-leitura = arquivo.readlines()[:2]
+leitura = arquivo.readlines()[:2]#pega somente os 2 primeiros termos
 for linha in leitura:
     linhas=linha.strip().split(',')
     x=0
@@ -12,4 +12,6 @@ for linha in leitura:
         for j in linhas:
             palavras=j.strip().split(',')
             print(palavras)
-    
+    #nome+dict()
+    #nome=[fulano]:30,70,m,1.64....[1]
+            
