@@ -13,5 +13,6 @@ for linha in leitura:
             palavras=j.strip().split(',')
             print(palavras)
     #nome+dict()
-    #nome=[fulano]:30,70,m,1.64....[1]
+    #nome=[fulano]:30,70,m,1.64....
+    #nome[1]= 70
             
