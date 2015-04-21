@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 
+#from fator_atividadefisica.py import tmb
+# from tmb.py import TMB(sexo,peso,altura,idade)
 def Necessidade_Calorica(fator,tmb):
     if fator=='minimo':
         necessidade = tmb*1.2
