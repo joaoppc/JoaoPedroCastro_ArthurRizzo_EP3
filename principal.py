@@ -5,8 +5,8 @@ Created on Wed Apr 22 18:23:43 2015
 @author: João Pedro
 """
 
-from tbm import*
-from necessidade_calorica import*
+from tbm import*#função importada
+from necessidade_calorica import* #função importada
 arquivo = open('usuario.csv','r')
 leitura1 = arquivo.readlines()[1:2]#pega somente os 2 primeiros termos
 for linha1 in leitura1:
