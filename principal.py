@@ -27,6 +27,7 @@ arquivo4 = open('usuario.csv','r')
 leitura4 = arquivo4.readlines()[3:10]
 arquivo2 = open('alimentos.csv','r')
 leitura3=arquivo2.readlines()
+calorias = []
 for linha4 in leitura4:
     linhas4=linha4.strip().split(',')
     datas = linhas4[0]
@@ -40,6 +41,9 @@ for linha4 in leitura4:
         val=[(linhas3[1]),(linhas3[2]),linhas3[3],linhas3[4],linhas3[5]]
         if key==alimentos:
             cal = float(quantidade)/float(val[0])*float(val[1])
-                   
-    print(cal)
+            calorias.append(cal)
+cal_total = calorias[0]+ calorias[1]+ calorias[2]+ calorias[3]+ calorias[4]+ calorias[5]+ calorias[6]
+print(cal_total)    
+            
+   
             
