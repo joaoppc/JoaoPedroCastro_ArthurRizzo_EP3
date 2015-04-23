@@ -13,6 +13,7 @@ for linha1 in leitura1:
     linhas1=linha1.strip().split(',')
     x=0
     while x<1:
+        """ Processamento dos elementos do usuário"""
         nome=linhas1[0]
         idade=int(linhas1[1])
         peso=float(linhas1[2])
@@ -29,6 +30,7 @@ arquivo2 = open('alimentos.csv','r')
 leitura3=arquivo2.readlines()
 calorias = []
 for linha4 in leitura4:
+    """ Divisão dos elementos (data,alimento e quantidade) na lista """
     linhas4=linha4.strip().split(',')
     datas = linhas4[0]
     alimentos = linhas4[1]
@@ -36,6 +38,7 @@ for linha4 in leitura4:
     lista = [datas,alimentos,quantidade]
 # a idéa nesse loop abaixo era fazer um dicionário, más acabei ultilizando um método de lista
     for c in leitura3:
+        """ cálculo de calorias ingeridas"""
         linhas3=c.strip().split(',')
         key=linhas3[0]#
         val=[(linhas3[1]),(linhas3[2]),linhas3[3],linhas3[4],linhas3[5]]
